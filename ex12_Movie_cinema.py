@@ -1,14 +1,15 @@
 def sales_for_today():
     print("=" * 30)
     print("The Total tickets sold today was:", total_sold)
-    print("This was made of up:\n" + str(adult_tickets), "for adults; and\n",
-          str(student_tickets) + "for students; and",
-          str(child_tickets), "for children; and",
-          str(gift_voucher_tickets), "gift vouchers\n\n"
-          "Sales for the day came to $", total_sales)
+    print("This was made of up:\n" + str(adult_tickets), "for adults; and\n" +
+          str(student_tickets) + " for students; and\n" +
+          str(child_tickets) + " for children; and\n" +
+          str(gift_voucher_tickets) + " gift vouchers\n")
+    print("Sales for the day came to $" + str(total_sales))
 
 
 # Main routine
+print("Im cool - jess")
 ADULT = 12.5
 STUDENT = 9
 CHILD = 7
