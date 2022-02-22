@@ -5,7 +5,6 @@ def sales_for_today():
           str(student_tickets) + " for students; and\n" +
           str(child_tickets) + " for children; and\n" +
           str(gift_voucher_tickets) + " gift vouchers\n")
-    print("Sales for the day came to $" + str(total_sales))
 
 
 # Main routine
@@ -53,6 +52,8 @@ if sell_ticket == "Y":
         if sell_ticket_again == "N":
             end_of_sales = "Y"
             sales_for_today()
+            print(f"Sales for the day came to ${total_sales:,.2f}")
 
 elif sell_ticket == "N":
     sales_for_today()
+    print(f"Sales for the day came to ${total_sales:,.2f}")
